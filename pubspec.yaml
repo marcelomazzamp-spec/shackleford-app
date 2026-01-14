@@ -1,0 +1,99 @@
+name: shackleford
+description: "Shackleford Security - Protección sin exposición"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  
+  # Estado y navegación
+  provider: ^6.1.1
+  go_router: ^13.0.0
+  
+  # Comunicación
+  web_socket_channel: ^2.4.0
+  socket_io_client: ^2.0.3+1
+  http: ^1.1.2
+  
+  # Audio
+  record: ^5.0.4
+  audioplayers: ^5.2.1
+  just_audio: ^0.9.36
+  audio_session: ^0.1.18
+  
+  # Ubicación
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.0
+  
+  # Almacenamiento
+  shared_preferences: ^2.2.2
+  flutter_secure_storage: ^9.0.0
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  
+  # Notificaciones
+  firebase_core: ^2.24.2
+  firebase_messaging: ^14.7.10
+  flutter_local_notifications: ^16.3.0
+  
+  # Permisos
+  permission_handler: ^11.1.0
+  
+  # Background
+  workmanager: ^0.5.2
+  flutter_background_service: ^5.0.5
+  flutter_background_geolocation: ^4.13.4
+  
+  # Utilidades
+  vibration: ^1.8.4
+  wakelock_plus: ^1.1.4
+  connectivity_plus: ^5.0.2
+  battery_plus: ^5.0.2
+  device_info_plus: ^9.1.1
+  package_info_plus: ^5.0.1
+  
+  # Formato
+  intl: ^0.18.1
+  timeago: ^3.6.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+  adaptive_icon_background: "#0A0A0A"
+  adaptive_icon_foreground: "assets/images/logo.png"
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/sounds/
+  
+  fonts:
+    - family: Rajdhani
+      fonts:
+        - asset: assets/fonts/Rajdhani-Regular.ttf
+        - asset: assets/fonts/Rajdhani-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Rajdhani-SemiBold.ttf
+          weight: 600
